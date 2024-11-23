@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lentile de contact</title>
+    <link rel="stylesheet" href="LentileDeContact.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container flex">
+        <div class="left">
+          <div class="main_image">
+            <img src="images-LentileDeContact/p1.jpg" class="slide" />
+          </div>
+          <div class="option flex">
+            <img
+              src="images-LentileDeContact/p1.jpg"
+              onclick="img('images-LentileDeContact/p1.jpg')"
+            />
+            <img
+              src="images-LentileDeContact/p2.jpg"
+              onclick="img('images-LentileDeContact/p2.jpg')"
+            />
+            <img
+              src="images-LentileDeContact/p3.jpg"
+              onclick="img('images-LentileDeContact/p3.jpg')"
+            />
+          </div>
+        </div>
+        <div class="right">
+          <h3>Air Optix Night & Day Aqua lunare 6 lentile/cutie</h3>
+          <h4>269 Lei</h4>
+          <p>
+            Lentilele Alcon/ Ciba Vision Air Optix Night & Day Aqua sunt lentile
+            de contact care se inlocuiesc lunar. Datorita materialului
+            respirabil din care sunt confectionate, cantitatea de oxigen
+            furnizata este de pana la 6 ori mai mare decat aceea furnizata de
+            alte lentile fabricate din hidrogel. Astfel, purtatorul se va putea
+            bucura de confort sporit atat in timpul zilei, cat si al noptii.
+            <br />
+            <br />
+            Lentile ideale pentru acele persoane care sufera din cauza
+            disconfortului rezultat in urma purtarii altor tipuri de lentile,
+            purtare insotita de uscare si iritare, dar si acelor persoane care
+            se afla in cautarea unor lentile mai confortabile pentru ochii lor,
+            care pot fi purtate chiar si in timpul somnului.
+          </p>
+          <button class="btn">Adauga in cos</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      function img(anything) {
+        document.querySelector(".slide").src = anything;
+      }
+
+      function change(change) {
+        const line = document.querySelector(".home");
+        line.style.background = change;
+      }
+    </script>
+  </body>
+</html>

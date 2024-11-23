@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rame de ochelari</title>
+    <link rel="stylesheet" href="RameDeOchelari.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container flex">
+        <div class="left">
+          <div class="main_image">
+            <img src="images-rameDeDvedere/p1.jpg" class="slide" />
+          </div>
+          <div class="option flex">
+            <img
+              src="images-rameDeDvedere/p1.jpg"
+              onclick="img('images-rameDeDvedere/p1.jpg')"
+            />
+            <img
+              src="images-rameDeDvedere/p2.jpg"
+              onclick="img('images-rameDeDvedere/p2.jpg')"
+            />
+            <img
+              src="images-rameDeDvedere/p3.jpg"
+              onclick="img('images-rameDeDvedere/p3.jpg')"
+            />
+          </div>
+        </div>
+        <div class="right">
+          <h3>Rame ochelari de vedere dama Guess GU2796 001</h3>
+          <h4>529 Lei</h4>
+          <p>
+            Cu ajutorul acestei perechi de ochelari de la Guess vei da, cu
+            siguranta, startul unui nou trend. Prezentabili si in pas cu moda,
+            GU2796 001 iti vor asigura un look de invidiat si iti vor completa
+            cu brio orice garderoba, scotand in evidenta personalitatea
+            puternica si stilul original, stil care te va face sa intorci toate
+            privirile si iti va asigura succesul bine meritat. <br />
+            <br />
+            Forma ochi de pisica, perfecta pentru tine, iti incadreaza in mod
+            ideal conturul ochilor si, cu ajutorul dioptriilor necesare sau a
+            filtrului impotriva luminii albastre, iti vor oferi atat confortul
+            necesar cat si functionalitatea de care ai nevoie asigurandu-ti o
+            vedere de nota zece.
+          </p>
+          <button class="btn">Adauga in cos</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      function img(anything) {
+        document.querySelector(".slide").src = anything;
+      }
+
+      function change(change) {
+        const line = document.querySelector(".home");
+        line.style.background = change;
+      }
+    </script>
+  </body>
+</html>

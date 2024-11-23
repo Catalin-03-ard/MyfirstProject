@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rame de soare</title>
+    <link rel="stylesheet" href="RameDeSoare.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container flex">
+        <div class="left">
+          <div class="main_image">
+            <img src="images-rameDeSoare/p1.jpg" class="slide" />
+          </div>
+          <div class="option flex">
+            <img
+              src="images-rameDeSoare/p1.jpg"
+              onclick="img('images-rameDeSoare/p1.jpg')"
+            />
+            <img
+              src="images-rameDeSoare/p2.jpg"
+              onclick="img('images-rameDeSoare/p2.jpg')"
+            />
+            <img
+              src="images-rameDeSoare/p3.jpg"
+              onclick="img('images-rameDeSoare/p3.jpg')"
+            />
+          </div>
+        </div>
+        <div class="right">
+          <h3>Ochelari de soare barbati Polaroid PLD 2082/S/X KJ1 M9</h3>
+          <h4>249 Lei</h4>
+          <p>
+            Cu ajutorul acestei perechi de ochelari de la Polaroid vei da, cu
+            siguranta, startul unui nou trend. Prezentabili si in pas cu moda,
+            2082/S/X KJ1 M9 iti vor asigura un look de invidiat si iti vor
+            completa cu brio orice garderoba, scotand in evidenta personalitatea
+            puternica si stilul original, stil care te va face sa intorci toate
+            privirile si iti va asigura succesul bine meritat. <br />
+            <br />
+            Cu lentile gri, acesti ochelari de soare in stil Rotund au fost
+            creati special pentru a-ti proteja ochii si a-ti oferi confortul
+            necesar atat pe timp de vara cat si pe timp de iarna. Protectia
+            UV400 care este aplicata 100% pe lentilele ochelarilor 2082/S/X KJ1
+            M9, asigura atat confort cat si functionalitate imbinand totodata
+            utilul cu placutul.
+          </p>
+          <button class="btn">Adauga in cos</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      function img(anything) {
+        document.querySelector(".slide").src = anything;
+      }
+
+      function change(change) {
+        const line = document.querySelector(".home");
+        line.style.background = change;
+      }
+    </script>
+  </body>
+</html>

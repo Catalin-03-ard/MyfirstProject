@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lensa</title>
+    <link rel="stylesheet" href="style-home.css" />
+  </head>
+  <body>
+
+    <section id="navbar">
+      <h4>Lensa</h4>
+      <ul>
+        <li><a href="#header">Acasa</a></li>
+        <li><a href="#despreNoi">Despre Noi</a></li>
+        <li><a href="#products">Produse</a></li>
+        <li><a href="#formular-contact">Contact</a></li>
+      </ul>
+    </section>
+
+    <!-- inceput prima pagina -->
+    <section id="header">
+      <div class="rablaReclama">
+        <h3>
+          Inscrie-te in programul Rabla la ochelarii de vedere si intra in
+          posesia lor! Primesti vouchere de pana la 2.000 lei <br />
+          Nu mai astepta! Valabil pana in 8 Mai 2024
+        </h3>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="images-home/imagine1.jpg" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images-home/imagine2.jpeg" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images-home/imagine5.jpg" />
+        </div>
+
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script src="script-home.js"></script>
+
+      <div class="btn">
+        <a href="#products" class="button">MAI MULTE</a>
+      </div>
+    </section>
+    <!-- sfarsit prima pagina -->
+
+    <!-- inceput pagina despre noi -->
+    <section id="despreNoi">
+      <div class="titlu-despreNoi">
+        <h1>Despre Noi</h1>
+      </div>
+      <div class="informatii">
+        <div class="descriere">
+          <div class="descriere-imagine">
+            <img src="images-home/sediu.jpeg" alt="Despre Noi" />
+          </div>
+          <div class="descriereaComapaniei">
+            <p>
+              Povestea începe în 2013 cu un magazin online de lentile de contact
+              colorate și în timp transformă Lensa în unul dintre cei mai mari
+              jucători pe piața de optică din România. Lensa este un brand 100%
+              românesc, imaginat cu pasiune și încredere pentru a oferi o gamă
+              completă de produse și soluții de protecție, corecție și îngrijire
+              a vederii. <br /><br />Suntem unul dintre cei mai mari jucători pe
+              piața de optică din România, cu un magazin online lider de piață
+              și o rețea națională cu peste 80 de showroomuri. Sediul Central
+              Lensa se află într-un business park din București și este locul
+              unde se întâlnesc toate departamentele.<br />
+              <br />
+              Lensa adună în portofoliu sute dintre cele mai renumite branduri
+              de ochelari de soare și rame de vedere, dar și cei mai importanți
+              furnizori de lentile de vedere, lentile de contact pentru orice
+              tip de corecție și lentile de contact colorate. Portofoliul Lensa
+              cuprinde o varietate de la branduri internaționale, sigure și de
+              încredere, ce acoperă orice nevoie. Lensa înseamnă calitate de
+              excepție prin tehnologii de ultimă oră, personal cu înaltă
+              pregătire și un portofoliu de branduri și furnizori de încredere,
+              de renume mondial.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sfarsit pagina despre noi -->
+
+   
+
+    <section id="products">
+      <div class="toateProdusele">
+        <h1>Produse</h1>
+        <div class="row">
+          <div class="produs">
+            <a href="RameDeOchelari.html" target="_blank"
+              ><img src="images-home/rame de vedere.jpeg" alt="Produs 1"
+            /></a>
+            <p id="p-name">Rame de vedere</p>
+          </div>
+          <div class="produs">
+            <a href="RameDeSoare.html" target="_blank"
+              ><img src="images-home/rame de soare.jpg" alt="Produs 2"
+            /></a>
+            <p id="p-name">Rame de soare</p>
+          </div>
+        </div>
+        <div class="row-p2">
+          <div class="produs">
+            <a href="LentileDeContact.html" target="_blank"
+              ><img src="images-home/lentile-de-contact.jpg" alt="Produs 3"
+            /></a>
+            <p id="p-name" class="paragraf-lentile">Lentile de contact</p>
+          </div>
+          <div class="produs">
+            <a href="SolutiiSiAccesorii.html" target="_blank"
+              ><img src="images-home/solutie pentru ochelari.jpg" alt="Produs 4"
+            /></a>
+            <p id="p-name">Solutii si accesorii ochelari</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formular-contact">
+      <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <h1>Formular de contact</h1>
+          <input type="hidden" name="access_key" value="4bd088de-1a20-42b8-9963-d236ebfb9f28">
+          <input type="text" name="Nume" placeholder="Nume" class="contact-inputs" required />
+          <input type="text" name="Prenume" placeholder="Prenume" class="contact-inputs" required />
+          <input type="email" name="email" placeholder="Email" class="contact-inputs" required />
+          <input type="text" name="Mobil" placeholder="Mobil" class="contact-inputs" required />
+          <textarea name="message" placeholder="Scrie mesajul tău aici..." class="textarea"></textarea>
+          <input type="submit" value="Trimite" id="button-formular" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
